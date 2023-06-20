@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Raj</title>
+</head>
+<link rel="stylesheet" href="StyleSheet1.css" />
+<script src="index.js"></script>
+<div class="myDiv">
+    <body>
+        <h2><u>MentalHelp App</u></h2>
+        <a href=https://www.figma.com/file/RaRsdR1w2UALUeohM3v9Rf/Mental-Wellbeing-First-iteration-(Copy)?type =design&node-id =0-1&t =iMvqX4bi37f9AYJx-0>FigmaLink</a><br><br>
+        <a href=https://www.figma.com/file/RaRsdR1w2UALUeohM3v9Rf/Mental-Wellbeing-First-iteration-(Copy)?type =design&node-id =0-1&t =iMvqX4bi37f9AYJx-0>FigmaLink</a><br><br>
+        <a href=https://www.figma.com/file/RaRsdR1w2UALUeohM3v9Rf/Mental-Wellbeing-First-iteration-(Copy)?type =design&node-id =0-1&t =iMvqX4bi37f9AYJx-0>FigmaLink</a><br><br>
+        <a href=https://www.figma.com/file/RaRsdR1w2UALUeohM3v9Rf/Mental-Wellbeing-First-iteration-(Copy)?type =design&node-id =0-1&t =iMvqX4bi37f9AYJx-0>FigmaLink</a><br><br>
+        <a href=" https://www.w3schools.com/html/html_images.asp"><img src="https://th.bing.com/th/id/OIP.dZvUp1ZTd_AgswCgyH1AegHaHZ?pid=ImgDet&rs=1" /></a> <img src="https://th.bing.com/th/id/OIP.dZvUp1ZTd_AgswCgyH1AegHaHZ?pid=ImgDet&rs=1" />
+        <img src="https://th.bing.com/th/id/OIP.dZvUp1ZTd_AgswCgyH1AegHaHZ?pid=ImgDet&rs=1" /> <img src="https://th.bing.com/th/id/OIP.dZvUp1ZTd_AgswCgyH1AegHaHZ?pid=ImgDet&rs=1" />
+
+    </body>
+
+</div>
+<body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Congratulations, Quiz Completed.</h1>
+
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 18</h1>
+                <h1> Question : <span id="question-number"></span> / 18</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+
+                <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                        <h1>Please Pick An Option</h1>
+
+                        <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+<style>
+    head {
+        background-color: red;
+    }
+
+    div {
+        background-color: lightblue;
+    }
+
+    p {
+        background-color: yellow;
+    }
+
+    body {
+        background-color: green;
+    }
+
+    a:link {
+        text-decoration: blue;
+    }
+
+    a:visited {
+        text-decoration: green;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+
+    .myDiv {
+        margin-left: 300px;
+        border: 50px outset red;
+        background-color: lightblue;
+        text-align: center;
+        border-radius: 8px;
+        border: 5px solid #ddd;
+        border-color: black;
+        padding: 5px;
+        width: 650px;
+        background-image: url("C:/Users/surek/Downloads/Mental (1)/1.png");
+        background-size: 750px 750px;
+    }
+
+    img {
+        border: 5px solid #ddd;
+        border-radius: 4px;
+        border-color: black;
+        padding: 5px;
+        width: 100px;
+    }
+</style>
+</html>
