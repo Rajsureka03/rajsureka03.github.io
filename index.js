@@ -252,8 +252,17 @@ function checkForAnswer() {
     })
 
     //Increases a player's score if an option is selected
-      if (options[0].checked === true || options[1].checked === true || options[2].checked === true || options[3].checked == true) {
+    if (options[0].checked === true && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
         playerScore++
+    }
+    if (options[0].checked === false && options[1].checked === true && options[2].checked === false && options[3].checked == false) {
+        playerScore+=2
+    }
+    if (options[0].checked === false && options[1].checked === false && options[2].checked === true && options[3].checked == false) {
+        playerScore += 3
+    }
+    if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == true) {
+        playerScore += 4
     }
 
     //checking if checked radio button is same as answer
@@ -265,12 +274,15 @@ function checkForAnswer() {
             indexNumber++ //adding 1 to index so has to display next question..
             //set to delay question number till when next question loads
             if (option[0].checked === true && option[1].checked === false && option[2].checked === false && option[3].checked == false) {
-                playerScore+1
+                playerScore + 1
+            }
+            else if (option[0].checked === false && option[1].checked === true && option[2].checked === false && option[3].checked == false) {
+                playerScore + 2
             }
             setTimeout(() => {
                 questionNumber++
             }, 100)
-            
+
         }
 
         else if (option.checked && option.value !== currentQuestionAnswer) {
@@ -286,7 +298,6 @@ function checkForAnswer() {
         }
     })
 }
-
 
 
 //called when the next button is called
