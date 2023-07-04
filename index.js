@@ -236,7 +236,7 @@ function NextQuestion(index) {
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
-
+    
 }
 
 
@@ -377,4 +377,8 @@ function closeScoreModal() {
 //function to close warning modal
 function closeOptionModal() {
     document.getElementById('option-modal').style.display = "none"
+}
+
+window.onload = () => {
+    NextQuestion(0);
 }
