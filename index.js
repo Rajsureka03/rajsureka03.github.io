@@ -236,7 +236,7 @@ function NextQuestion(index) {
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
-    
+
 }
 
 
@@ -256,7 +256,7 @@ function checkForAnswer() {
         playerScore++
     }
     if (options[0].checked === false && options[1].checked === true && options[2].checked === false && options[3].checked == false) {
-        playerScore+=2
+        playerScore += 2
     }
     if (options[0].checked === false && options[1].checked === false && options[2].checked === true && options[3].checked == false) {
         playerScore += 3
@@ -360,6 +360,35 @@ function handleEndGame() {
     document.getElementById('wrong-answers').innerHTML = wrongAttempt
     document.getElementById('right-answers').innerHTML = playerScore
     document.getElementById('score-modal').style.display = "flex"
+
+    var Text = 'hello';
+
+    function setInput(button) {
+        var buttonVal = button.name,
+            textbox = document.getElementById('input_' + buttonVal);
+        textbox.value = SendEmail;
+        <title>Sending Mail</title>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script type="text/javascript">
+                function sendEmail() {
+                    Email.send({
+                        Host: "smtp.gmail.com",
+                        To: "rajsureka03@gmail.com",
+                        From: "rajsureka03@gmail.com",
+                        Subject: "Your pHQ9 Questionnaire Results",
+                        Body: "Well that was easy!!",
+                    })
+                        .then(function (message) {
+                            alert("Mail has been sent successfully")
+                        });
+                }
+            </script>
+            <form method="post">
+                <input type="button" value="Send Mail"
+                       onclick="sendEmail()" />
+            </form>
+        </html >
+    }
 
 }
 
