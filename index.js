@@ -3,204 +3,75 @@
 //you can change the questions to your own taste or even add more questions..
 const questions = [
     {
-        question: "How many days makes a week ?",
-        optionA: "10 days",
-        optionB: "14 days",
-        optionC: "5 days",
-        optionD: "7 days",
+        question: "Little interest or pleasure in doing things",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     },
 
     {
-        question: "How many players are allowed on a soccer pitch ?",
-        optionA: "10 players",
-        optionB: "11 players",
-        optionC: "9 players",
-        optionD: "12 players",
+        question: "Feeling down, depressed, or hopeless",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     },
 
     {
-        question: "Who was the first President of USA ?",
-        optionA: "Donald Trump",
-        optionB: "Barack Obama",
-        optionC: "Abraham Lincoln",
-        optionD: "George Washington",
+        question: "Trouble falling or staying asleep, or sleeping too much",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     },
 
     {
-        question: "30 days has ______ ?",
-        optionA: "January",
-        optionB: "December",
-        optionC: "June",
-        optionD: "August",
+        question: "Feeling tired or having little energy",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     },
 
     {
-        question: "How manay hours can be found in a day ?",
-        optionA: "30 hours",
-        optionB: "38 hours",
-        optionC: "48 hours",
-        optionD: "24 hours",
+        question: "Poor appetite or overeating",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     },
 
     {
-        question: "Which is the longest river in the world ?",
-        optionA: "River Nile",
-        optionB: "Long River",
-        optionC: "River Niger",
-        optionD: "Lake Chad",
+        question: "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     },
 
     {
-        question: "_____ is the hottest Continent on Earth ?",
-        optionA: "Oceania",
-        optionB: "Antarctica",
-        optionC: "Africa",
-        optionD: "North America",
+        question: "Trouble concentrating on things, such as reading the newspaper or watching television",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     },
 
     {
-        question: "Which country is the largest in the world ?",
-        optionA: "Russia",
-        optionB: "Canada",
-        optionC: "Africa",
-        optionD: "Egypt",
+        question: "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     },
 
     {
-        question: "Which of these numbers is an odd number ?",
-        optionA: "Ten",
-        optionB: "Twelve",
-        optionC: "Eight",
-        optionD: "Eleven",
-    },
-
-    {
-        question: `"You Can't see me" is a popular saying by`,
-        optionA: "Eminem",
-        optionB: "Bill Gates",
-        optionC: "Chris Brown",
-        optionD: "John Cena",
-    },
-
-    {
-        question: "Where is the world tallest building located ?",
-        optionA: "Africa",
-        optionB: "California",
-        optionC: "Dubai",
-        optionD: "Italy",
-    },
-
-    {
-        question: "The longest river in the United Kingdom is ?",
-        optionA: "River Severn",
-        optionB: "River Mersey",
-        optionC: "River Trent",
-        optionD: "River Tweed",
-    },
-
-
-    {
-        question: "How many permanent teeth does a dog have ?",
-        optionA: "38",
-        optionB: "42",
-        optionC: "40",
-        optionD: "36",
-    },
-
-    {
-        question: "Which national team won the football World cup in 2018 ?",
-        optionA: "England",
-        optionB: "Brazil",
-        optionC: "Germany",
-        optionD: "France",
-    },
-
-    {
-        question: "Which US state was Donald Trump Born ?",
-        optionA: "New York",
-        optionB: "California",
-        optionC: "New Jersey",
-        optionD: "Los Angeles",
-    },
-
-    {
-        question: "How man states does Nigeria have ?",
-        optionA: "24",
-        optionB: "30",
-        optionC: "36",
-        optionD: "37",
-    },
-
-    {
-        question: "____ is the capital of Nigeria ?",
-        optionA: "Abuja",
-        optionB: "Lagos",
-        optionC: "Calabar",
-        optionD: "Kano",
-    },
-
-    {
-        question: "Los Angeles is also known as ?",
-        optionA: "Angels City",
-        optionB: "Shining city",
-        optionC: "City of Angels",
-        optionD: "Lost Angels",
-    },
-
-    {
-        question: "What is the capital of Germany ?",
-        optionA: "Georgia",
-        optionB: "Missouri",
-        optionC: "Oklahoma",
-        optionD: "Berlin",
-    },
-
-    {
-        question: "How many sides does an hexagon have ?",
-        optionA: "Six",
-        optionB: "Sevene",
-        optionC: "Four",
-        optionD: "Five",
-    },
-
-    {
-        question: "How many planets are currently in the solar system ?",
-        optionA: "Eleven",
-        optionB: "Seven",
-        optionC: "Nine",
-        optionD: "Eight",
-    },
-
-    {
-        question: "Which Planet is the hottest ?",
-        optionA: "Jupitar",
-        optionB: "Mercury",
-        optionC: "Earth",
-        optionD: "Venus",
-    },
-
-    {
-        question: "where is the smallest bone in human body located?",
-        optionA: "Toes",
-        optionB: "Ears",
-        optionC: "Fingers",
-        optionD: "Nose",
-    },
-
-    {
-        question: "How many hearts does an Octopus have ?",
-        optionA: "One",
-        optionB: "Two",
-        optionC: "Three",
-        optionD: "Four",
-    },
-
-    {
-        question: "How many teeth does an adult human have ?",
-        optionA: "28",
-        optionB: "30",
-        optionC: "32",
-        optionD: "36",
+        question: "Thoughts that you would be beter off dead, or of hurting yourself",
+        optionA: "Not at all",
+        optionB: "Several days",
+        optionC: "More than half the days",
+        optionD: "Nearly every day",
     }
 
 ]
@@ -253,7 +124,7 @@ function checkForAnswer() {
 
     //Increases a player's score if an option is selected
     if (options[0].checked === true && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
-        playerScore++
+        playerScore+0
     }
     if (options[0].checked === false && options[1].checked === true && options[2].checked === false && options[3].checked == false) {
         playerScore += 2
@@ -367,27 +238,6 @@ function handleEndGame() {
         var buttonVal = button.name,
             textbox = document.getElementById('input_' + buttonVal);
         textbox.value = SendEmail;
-        <title>Sending Mail</title>
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-            <script type="text/javascript">
-                function sendEmail() {
-                    Email.send({
-                        Host: "smtp.gmail.com",
-                        To: "rajsureka03@gmail.com",
-                        From: "rajsureka03@gmail.com",
-                        Subject: "Your pHQ9 Questionnaire Results",
-                        Body: "Well that was easy!!",
-                    })
-                        .then(function (message) {
-                            alert("Mail has been sent successfully")
-                        });
-                }
-            </script>
-            <form method="post">
-                <input type="button" value="Send Mail"
-                       onclick="sendEmail()" />
-            </form>
-        </html >
     }
 
 }
