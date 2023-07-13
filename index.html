@@ -15,7 +15,30 @@
         <a href=" https://www.w3schools.com/html/html_images.asp"><img src="https://th.bing.com/th/id/OIP.dZvUp1ZTd_AgswCgyH1AegHaHZ?pid=ImgDet&rs=1" /></a> <img src="https://th.bing.com/th/id/OIP.dZvUp1ZTd_AgswCgyH1AegHaHZ?pid=ImgDet&rs=1" />
         <img src="https://th.bing.com/th/id/OIP.dZvUp1ZTd_AgswCgyH1AegHaHZ?pid=ImgDet&rs=1" /> <img src="https://th.bing.com/th/id/OIP.dZvUp1ZTd_AgswCgyH1AegHaHZ?pid=ImgDet&rs=1" />
 
+        <title>Sending Mail</title>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript">
+            function sendEmail() {
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    To: "rajsureka03@gmail.com",
+                    From: "rajsureka03@gmail.com",
+                    Subject: "Your pHQ9 Questionnaire Results",
+                    Body: "Well that was easy!!",
+                })
+                    .then(function (message) {
+                        alert("Mail has been sent successfully")
+                    });
+            }
+        </script>
+        <form method="post">
+            <input type="button" value="Send Mail"
+                   onclick="sendEmail()" />
+        </form>
+</html>
+
     </body>
+
 
 </div>
 <body>
